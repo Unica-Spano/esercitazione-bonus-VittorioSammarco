@@ -31,7 +31,6 @@ import java.util.Locale;
 public class LoginActivity extends AppCompatActivity {
 
     public static final String PERSON_PATH = "com.example.esercitazionebonus.person";
-    private ActivityLoginBinding binding;
     public Person person;
     protected Calendar calendar;
     protected EditText name, surname, birthday, email, password;

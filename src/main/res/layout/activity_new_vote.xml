@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".NewVoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="316dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/logout"
+            android:paddingTop="7dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logout" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="NUOVO VOTO"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_form_activity"
+        android:textColor="@color/red"
+        android:id = "@+id/error"
+        android:visibility="gone"
+        android:textSize="18sp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/exam_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:hint="@string/prompt_exam_name"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            />
+
+        <EditText
+            android:id="@+id/cfu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/prompt_cfu"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            />
+
+        <EditText
+            android:id="@+id/vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/prompt_vote"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            />
+
+        <Button
+            android:id="@+id/add_vote_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="@color/hint"
+            android:gravity="center"
+            android:text="@string/action_add_vote"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
