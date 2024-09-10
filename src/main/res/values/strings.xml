@@ -18,12 +18,16 @@
     <string name="libretto">Il mio libretto</string>
     <string name="add_vote">Aggiungi voto</string>
     <string name="remove_vote">Rimuovi voto</string>
-    <string name="prompt_cfu">Numero di CFU</string>
+    <string name="prompt_cfu">Numero di Crediti</string>
     <string name="prompt_exam_name">Nome dell\'esame</string>
-    <string name="prompt_vote">Voto ottenuto</string>
+    <string name="prompt_vote">Voto ottenuto (31 = 30L)</string>
     <string name="action_add_vote">Conferma il voto e aggiungilo al libretto</string>
     <string name="first_vote">Inserisci il tuo primo voto e crea il tuo libretto personale!</string>
     <string name="exam">ESAME</string>
     <string name="vote">VOTO</string>
     <string name="credits">CREDITI</string>
-</resources>
+    <string name="login_title">LOGIN</string>
+    <string name="aritm_title">MEDIA ARITMETICA</string>
+    <string name="ponde_title">MEDIA PONDERATA</string>
+    <string name="laurea_title">VOTO PREVISTO DI LAUREA</string>
+    <string name="nuovo_voto">NUOVO VOTO</string>
