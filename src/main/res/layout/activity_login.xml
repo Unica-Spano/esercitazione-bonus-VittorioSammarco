@@ -17,8 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
-        android:text="LOGIN"
-        android:textSize="50dp"
+        android:text="@string/login_title"
+        android:textSize="50sp"
         android:textAlignment="center"
         />
 
