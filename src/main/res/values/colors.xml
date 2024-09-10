@@ -5,5 +5,8 @@
     <color name="background">#EEE8DC</color>
     <color name="hint">#A5A2A2</color>
     <color name="red">#CD044B</color>
+    <color name="strong_red">#6E020F</color>
+    <color name="yellow">#A37B04</color>
+    <color name="green">#1B5A00</color>
     <color name="light_blue">#045E8E</color>
 </resources>
