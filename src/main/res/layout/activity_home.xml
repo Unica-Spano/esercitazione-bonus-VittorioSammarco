@@ -55,7 +55,6 @@
 
     <TextView
         android:id="@+id/libret_title"
-        android:visibility="gone"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +71,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/titleLayout"
-        android:visibility="gone"
         >
 
     <TableRow>
@@ -107,7 +105,6 @@
     </TableLayout>
 
     <ScrollView
-        android:visibility="gone"
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="175dp">
@@ -117,40 +114,6 @@
         android:layout_height="wrap_content"
         android:stretchColumns="3"
         android:id="@+id/tableLayout">
-
-        <TableRow>
-            <TextView
-                android:id="@+id/materia"
-                android:visibility="gone"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:background="@drawable/cell_border"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/vote"
-                android:visibility="gone"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:background="@drawable/cell_border"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/cfu"
-                android:visibility="gone"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:background="@drawable/cell_border"
-                android:textColor="@color/black"/>
-        </TableRow>
-
     </TableLayout>
 
     </ScrollView>
@@ -162,11 +125,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/add_remove_titles">
 
         <TextView
-            android:visibility="gone"
-            android:id="@+id/add_vote"
             android:layout_weight="1"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -177,8 +139,6 @@
             android:textAllCaps="true"/>
 
         <TextView
-            android:visibility="gone"
-            android:id="@+id/remove_vote"
             android:layout_weight="1"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -193,13 +153,13 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/add_remove_buttons">
 
         <ImageButton
+            android:id="@+id/add_vote_button"
             android:layout_weight="1"
             android:paddingStart="15dp"
-            android:visibility="gone"
-            android:id="@+id/add_vote_button"
             android:layout_width="wrap_content"
             android:layout_height="120dp"
             android:contentDescription="@string/add_vote"
@@ -210,10 +170,9 @@
             app:tint="@color/light_blue" />
 
         <ImageButton
+            android:id="@+id/remove_vote_button"
             android:layout_weight="1"
             android:paddingStart="15dp"
-            android:visibility="gone"
-            android:id="@+id/remove_vote_button"
             android:layout_width="wrap_content"
             android:layout_height="120dp"
             android:contentDescription="@string/remove_vote"
@@ -227,95 +186,89 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="35dp" />
+        android:layout_height="55dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/result_titles">
 
         <TextView
-            android:id="@+id/aritm_title"
-            android:visibility="gone"
             android:gravity="center"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:text = "MEDIA ARITMETICA" />
+            android:text = "@string/aritm_title" />
 
 
         <TextView
-            android:id="@+id/ponde_title"
-            android:visibility="gone"
             android:gravity="center"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:text = "MEDIA PONDERATA" />
+            android:text = "@string/ponde_title" />
 
         <TextView
-            android:id="@+id/laurea_title"
-            android:visibility="gone"
             android:gravity="center"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:text = "VOTO PREVISTO DI LAUREA" />
+            android:text = "@string/laurea_title" />
 
     </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/results">
 
             <TextView
                 android:id="@+id/aritmetica"
-                android:visibility="gone"
                 android:gravity="bottom|center"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
-                android:textSize="70sp" />
+                android:textSize="50sp" />
 
 
             <TextView
-                android:visibility="gone"
                 android:id="@+id/ponderata"
                 android:gravity="bottom|center"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
-                android:textSize="70sp" />
+                android:textSize="50sp" />
 
             <TextView
                 android:id="@+id/laurea"
-                android:visibility="gone"
                 android:gravity="bottom|center"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
-                android:textSize="70sp" />
+                android:textSize="50sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/first_vote">
 
         <ImageButton
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
             android:paddingTop="0dp"
             android:layout_gravity="center"
             android:id="@+id/first_vote_button"
